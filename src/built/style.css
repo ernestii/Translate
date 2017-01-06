@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Helvetica Neue';
+  font-family: 'Arial';
   background: #f1f1f1;
   font-weight: 300; }
 
@@ -24,14 +24,13 @@ h1 {
   font-weight: 400;
   color: #000;
   display: block;
-  padding: 20px 20px;
+  padding: 10px 20px 5px;
   font-size: 28px; }
   h1.small {
     font-size: 24px; }
   h1.smaller {
     font-size: 18px; }
 
-/* Dict */
 .Def {
   padding: 5px 20px;
   font-weight: normal;
@@ -41,7 +40,12 @@ h1 {
     .Def .meta .def-pos {
       color: green; }
     .Def .meta .def-ts {
-      color: gray; }
+      color: gray;
+      padding-right: 5px; }
+      .Def .meta .def-ts:before {
+        content: '['; }
+      .Def .meta .def-ts:after {
+        content: ']'; }
     .Def .meta .def-text {
       font-weight: bold; }
     .Def .meta .def-fl {
@@ -52,8 +56,15 @@ h1 {
     padding-bottom: 5px; }
     .Def .Tr ul li {
       display: inline-block;
-      padding-right: 5px; }
+      padding-right: 8px; }
     .Def .Tr ul.mean {
       color: saddlebrown; }
+  .Def .Def {
+    padding: 2px;
+    padding-left: 15px; }
+    .Def .Def .def-text {
+      font-weight: normal; }
+    .Def .Def .Tr {
+      opacity: .7; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

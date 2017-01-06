@@ -37,7 +37,7 @@ class Def extends React.Component {
       <div className="Def">
         <div className="meta">
           <span className="def-text">{def.text} </span>
-          <span className="def-ts">{def.ts} </span>
+          {def.ts && <span className="def-ts">{def.ts}</span>}
           <span className="def-pos">{def.pos} </span>
           <span className="def-fl">{def.fl} </span>
         </div>
