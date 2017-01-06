@@ -51,11 +51,7 @@ export default class App extends React.Component {
       setTimeout(function() {
         const remote = window.require('electron').remote;
         const win = remote.getCurrentWindow();
-
         let height = document.body.clientHeight;
-        if (height <= 200 ) {
-          height = 200;
-        }
         win.setSize(400, height, true);
       }, 50);
     }

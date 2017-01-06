@@ -5,7 +5,7 @@ var mb = menubar({
   dir: __dirname + '/src',
   tooltip: 'TranslateYa',
   preloadWindow: true,
-  height: 200
+  height: 150
 })
 
 mb.on('ready', function ready () {
@@ -34,5 +34,4 @@ mb.on('ready', function ready () {
 // Reload app on hide
 mb.on('after-hide', function () {
   mb.window.reload();
-  mb.window.setSize(400, 200);
 });
