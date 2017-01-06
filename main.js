@@ -5,6 +5,7 @@ var mb = menubar({
   dir: __dirname + '/src',
   tooltip: 'TranslateYa',
   preloadWindow: true,
+  width: 300,
   height: 150
 })
 
