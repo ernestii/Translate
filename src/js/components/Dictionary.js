@@ -6,8 +6,8 @@ class Tr extends React.Component {
     
     return (
       <div className="Tr">
+        <div class="text">{tr.text}</div>
         <ul className="syn">
-          <li>{tr.text}</li>
           {tr.syn && tr.syn.map((syn, i) => <li key={i}>{syn.text}</li> )}
         </ul>
         <ul className="mean">

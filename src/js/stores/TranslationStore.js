@@ -7,7 +7,7 @@ class TranslationStore extends EventEmitter {
     super();
     this.translation = {
       word: "",
-      translation: "Перевод..."
+      translation: ""
     };
   }
 

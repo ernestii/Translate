@@ -52,7 +52,7 @@ export default class App extends React.Component {
         const remote = window.require('electron').remote;
         const win = remote.getCurrentWindow();
         let height = document.body.clientHeight;
-        win.setSize(400, height, true);
+        win.setSize(400, height);
       }, 50);
     }
     

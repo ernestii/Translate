@@ -8,6 +8,7 @@ body
   background: #f1f1f1
   font-weight: 300
   min-height: 150px
+  padding-bottom: 10px
 
 input
   width: 100%
@@ -40,6 +41,8 @@ h1
   font-size: 13px
   .meta
     padding: 3px 0
+    .def-text
+      font-weight: bold
     .def-pos
       color: green
     .def-ts
@@ -49,14 +52,13 @@ h1
         content: '['
       &:after
         content: ']'
-    .def-text
-      font-weight: bold
     .def-fl
-      display: inline-block
-      padding-left: 10px
+      display: block
       color: gray
   .Tr
     padding-bottom: 5px
+    .text
+      font-size: 20px
     ul
       li
         display: inline-block
@@ -67,11 +69,14 @@ h1
 
   // Examples (def within a def)
   .Def
+    line-height: 1
     padding: 2px
     padding-left: 15px
-    
+
     .def-text
       font-weight: normal
 
     .Tr
-      opacity: .7
+      opacity: .5
+      .text
+        font-size: 14px
