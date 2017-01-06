@@ -69,8 +69,9 @@ h1 {
     .Def .Def .def-text {
       font-weight: normal; }
     .Def .Def .Tr {
-      opacity: .5; }
+      opacity: .5;
+      padding-bottom: 0; }
       .Def .Def .Tr .text {
-        font-size: 14px; }
+        font-size: 12px; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

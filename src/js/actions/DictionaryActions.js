@@ -9,7 +9,8 @@ export function reloadDictionary(word) {
     dispatcher.dispatch({type: "FETCH_DICT"});
     
     let direction = helpers.getLangDirection(word);
-    let API_call = `https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=${API_key}&text=${word}&lang=${direction}`;
+
+    let API_call = `https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=${API_key}&text=${word}&lang=${direction}&flags=6`;
 
     axios(API_call).then((data) => {
       if (data.status === 200) {

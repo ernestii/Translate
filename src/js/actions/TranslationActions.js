@@ -9,6 +9,7 @@ export function reloadTranslation(word) {
     dispatcher.dispatch({type: "FETCH_TRANSLATION"});
     
     let direction = helpers.getLangDirection(word);
+    
     let API_call = `https://translate.yandex.net/api/v1.5/tr.json/translate?key=${API_key}&text=${word}&lang=${direction}`;
 
     axios(API_call).then((data) => {
