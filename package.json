@@ -38,7 +38,7 @@
   "scripts": {
     "build": "webpack",
     "launch": "electron .",
-    "build-app": "electron-packager ./ TranslateYa --platform=win32 --arch=ia32 --icon=Icon.icns --overwrite",
+    "build-app": "rm -rf ./TranslateYa-darwin-x64 && electron-packager ./ TranslateYa --platform=darwin --arch=x64 --icon=Icon.icns --overwrite",
     "dev": "webpack-dev-server --content-base src --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

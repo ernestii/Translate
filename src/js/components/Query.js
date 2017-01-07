@@ -10,7 +10,7 @@ export default class Query extends React.Component {
   render() {
     return (
       <form>
-        <input placeholder="..." onChange={this.handleChange.bind(this)} />
+        <input placeholder="..." onChange={this.handleChange.bind(this)} autoFocus />
       </form>
     );
   }
