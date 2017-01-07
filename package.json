@@ -24,6 +24,8 @@
     "fs": "0.0.1-security",
     "menu": "^0.2.5",
     "menubar": "^5.2.0",
+    "mobx": "^2.7.0",
+    "mobx-react": "^4.1.0",
     "node-sass": "^4.1.1",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
