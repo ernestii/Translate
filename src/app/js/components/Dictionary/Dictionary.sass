@@ -1,0 +1,47 @@
+.dictionary
+  .def
+    padding: 5px 20px
+    font-weight: normal
+    font-size: 13px
+    .meta
+      padding: 3px 0
+      .def-text
+        font-weight: bold
+      .def-pos
+        color: green
+      .def-ts
+        color: gray
+        padding-right: 5px
+        &:before
+          content: '['
+        &:after
+          content: ']'
+      .def-fl
+        display: block
+        color: gray
+    .tr
+      padding-bottom: 5px
+      .text
+        font-size: 20px
+      ul
+        li
+          display: inline-block
+          padding-right: 8px
+        &.syn
+        &.mean
+          color: saddlebrown
+
+    // Examples (def within a def)
+    .def
+      line-height: 1
+      padding: 2px
+      padding-left: 15px
+
+      .def-text
+        font-weight: normal
+
+      .tr
+        opacity: .5
+        padding-bottom: 0;
+        .text
+          font-size: 12px
