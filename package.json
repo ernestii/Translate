@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack",
     "launch": "NODE_ENV=production webpack && electron .",
-    "build-app": "NODE_ENV=production webpack",
+    "build-app": "rm -rf ./TranslateYa-darwin-x64 && electron-packager ./ TranslateYa --platform=darwin --arch=x64 --icon=Icon.icns --overwrite",
     "dev": "webpack-dev-server --content-base src --inline --hot"
   },
   "author": "ernest iliiasov",
